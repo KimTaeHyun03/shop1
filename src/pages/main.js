@@ -10,7 +10,7 @@ import PdList from '../pdList.js';
 
 let Btn =styled.button`
 padding-left:10px;
-background : skyblue;
+background : none;
 `
 
 
@@ -31,7 +31,7 @@ let Main =()=>{
 				
 				
 				<div className="mainImg">
-								<img src={process.env.PUBLIC_URL+'/images/bg.png' } className="bg_png" />
+								<img src={process.env.PUBLIC_URL+'/images/bg.png'} className="bg_png" />
 				</div>
 				
 				
@@ -63,6 +63,7 @@ let Main =()=>{
         // clickTime이 홀수일 때
         axios.get('https://codingapple1.github.io/shop/data2.json').then((결과) => {
           let copy = [...cp_pd, ...결과.data];
+          
           changePd(copy);
         });
       } else {
@@ -77,7 +78,7 @@ let Main =()=>{
     });
   }}
 >
-  get요청
+  더보기
 </Btn>
 				
 				
@@ -95,10 +96,11 @@ function Card(props) {
 				
   return (
 												<div className="imgDiv">
-																							<img className="pdImg" src={process.env.PUBLIC_URL+'/images/bg.png' }  />
+																							<img className="pdImg" src={process.env.PUBLIC_URL+props.shoes.img_url }  />
 																							<h6>{props.shoes.title}</h6>
 																							<span>{props.shoes.id}</span>
-																							<p>{props.shoes.price}</p>
+																							<span>{props.shoes.price}</span>
+																				 <span className="spanCss">{props.shoes.color}</span>
 													
 				
 												</div>

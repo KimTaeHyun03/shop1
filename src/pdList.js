@@ -1,48 +1,57 @@
 let PdList= [{
 				"id" : 1,
-				"title" : "NewBalance", 
-				"price" : 12345,
-				"img_url" : '/images/bg.png'
+				"title" : "나이키", 
+				"price" : 12000,
+				"img_url" : '/images/nike.png',
+				"color" : "white"
 },{
 								"id" : 2,
-				"title" : "adidas", 
-				"price" : 123456,
-				"img_url" : '/images/bg.png'
+				"title" : "아디디스", 
+				"price" : 10000,
+				"img_url" : '/images/adidas.png',
+				"color" : "white"
 },{
 								"id" : 3,
-				"title" : "a", 
-				"price" : 1234567,
-				"img_url" : '/images/bg.png'
+				"title" : "반스", 
+				"price" : 20000,
+				"img_url" : '/images/vans.png',
+				"color" : "black"
 },{
 								"id" : 4,
-				"title" : "b", 
-				"price" : 12345678,
-				"img_url" : '/images/bg.png'
+				"title" : "호킨스", 
+				"price" : 17000,
+				"img_url" : '/images/hawkins.png',
+				"color" : "black"
 },{
 								"id" : 5,
-				"title" : "c", 
-				"price" : 123456789,
-				"img_url" : '/images/bg.png'
+				"title" : "리복", 
+				"price" : 17500,
+				"img_url" : '/images/reebok.png',
+				"color" : "white"
 },{
 								"id" : 6,
-				"title" : "d", 
-				"price" : 1234567890,
-				"img_url" : '/images/bg.png'
+				"title" : "누오보", 
+				"price" : 18000,
+				"img_url" : '/images/nuovo.png',
+				"color" : "pink"
 },{
 								"id" : 7,
-				"title" : "e", 
-				"price" : 123456678901,
-				"img_url" : '/images/bg.png'
+				"title" : "컨버스", 
+				"price" : 23000,
+				"img_url" : '/images/canvas.png',
+				"color" : "black"
 },{
 								"id" : 8,
-				"title" : "f", 
-				"price" : 1234566789012,
-				"img_url" : '/images/bg.png'
+				"title" : "뉴발란스", 
+				"price" : 33000,
+				"img_url" : '/images/newbal.png',
+				"color" : "white"
 },{
 								"id" : 9,
-				"title" : "g", 
-				"price" : 12345667890123,
-				"img_url" : '/images/bg.png'
+				"title" : "푸마", 
+				"price" : 50000,
+				"img_url" : '/images/puma.png',
+				"color" : "black"
 }
 ];
 

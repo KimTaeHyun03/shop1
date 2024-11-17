@@ -44,18 +44,12 @@ function App() {
   </Navbar>
   
 				<Routes>
-								<Route path='/' element={<Main/>}/>
- 					<Route path='/product' element={<Product/>}/>
+								<Route path='/' element={<Product/>}/>
+ 					<Route path='/product' element={<Main/>}/>
 								<Route path='/info' element={<Info/>}/>
 								<Route path='/login' element={<Login/>}/>
 				</Routes>
-				
   
-  
-  
-  
-  
-  <div>push 테스트</div>
   
   
   
