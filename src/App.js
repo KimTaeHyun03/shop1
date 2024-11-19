@@ -15,6 +15,7 @@ import Product from './pages/product.js';
 import Main from './pages/main';
 import Info from './pages/info.js';
 import Login from './pages/login.js';
+import Cart from './pages/cart.js';
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Navbar.Brand href="/">Shoes Shop</Navbar.Brand>
         <Nav className="me-auto">
         				<Nav.Link href="/product">product</Nav.Link>
+  <Nav.Link href="/cart">cart</Nav.Link>
 				 																				<Nav.Link href="/info">info</Nav.Link>
   																		</Nav>
   																		<Nav className="ms-auto">
@@ -48,6 +50,8 @@ function App() {
  					<Route path='/product' element={<Main/>}/>
 								<Route path='/info' element={<Info/>}/>
 								<Route path='/login' element={<Login/>}/>
+   <Route path='/cart' element={<Cart/>}/>
+
 				</Routes>
   
   
