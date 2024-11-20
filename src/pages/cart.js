@@ -8,6 +8,12 @@ let Cart = ()=>{
 				
 				let state = useSelector((state)=>state);
 				let dispatch = useDispatch();
+				
+				// 상태가 준비되지 않았을 경우 처리
+  if (!state.cart || !Array.isArray(state.cart)) {
+    return <div>Loading...</div>;
+  }
+				
 				return(
 				<>
 				
@@ -24,12 +30,12 @@ let Cart = ()=>{
 				
 				{
 				state.cart.map((a,i)=>
-								<tr>
-      <td>{state.cart[i].id}</td>
-      <td>{state.cart[i].title}</td>
-      <td>{state.cart[i].count}</td>
+								<tr key={a.id}>
+      <td>{a.id}</td>
+      <td>{a.title}</td>
+      <td>{a.count}</td>
       <td onClick={()=>{
-      				dispatch(addCount(state.cart[i].id))
+      				dispatch(addCount(a.id))
       }} >+</td>
     </tr>
 				
